@@ -2,19 +2,20 @@
   "name": "mynd-scully",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
+    "ng": "ng",
     "sanity": "sanity",
     "sanity:start": "sanity start",
     "sanity:build": "sanity build",
     "sanity:deploy": "sanity deploy",
     "schemas:deploy": "sanity graphql deploy",
     "scully": "scully --",
-    "scully:scan": "scully --scanRoutes",
-    "scully:serve": "scully serve --"
+    "scully:generate": "scully --scanRoutes",
+    "scully:serve": "scully serve --",
+    "render": "ng build --prod && scully --scanRoutes"
   },
   "private": true,
   "main": "package.json",
