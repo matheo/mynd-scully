@@ -7,6 +7,11 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 
 const routes: Routes = [
+  {
+    path: 'partners',
+    loadChildren: () =>
+      import('./partners/partners.module').then((m) => m.PartnersModule),
+  },
 ];
 
 @NgModule({

@@ -1,11 +1,11 @@
 export default {
-  name: 'partnership',
-  title: 'Partnership',
+  name: 'partner',
+  title: 'Partner',
   type: 'document',
   fields: [
     {
-      name: 'partner',
-      title: 'Partner',
+      name: 'name',
+      title: 'Partner Name',
       type: 'string',
     },
     {
@@ -24,16 +24,6 @@ export default {
       options: {
         hotspot: true,
       },
-    },
-    {
-      name: 'heading',
-      title: 'heading',
-      type: 'text',
-    },
-    {
-      name: 'content',
-      title: 'Content',
-      type: 'text',
     },
     {
       name: 'publishedAt',

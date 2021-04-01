@@ -5,14 +5,6 @@
   "projects": {
     "mynd-scully": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "styl"
-        },
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -98,6 +90,12 @@
     }
   },
   "schematics": {
+    "@schematics/angular:application": {
+      "strict": true
+    },
+    "@schematics/angular:service": {
+      "skipTests": true
+    },
     "@schematics/angular:component": {
       "style": "styl",
       "changeDetection": "OnPush",

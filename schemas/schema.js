@@ -5,7 +5,7 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
-import partnership from './partnership'
+import partner from './partner'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -16,6 +16,6 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
-    partnership,
+    partner,
   ]),
 })
