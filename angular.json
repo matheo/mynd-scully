@@ -96,5 +96,12 @@
       }
     }
   },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "styl",
+      "changeDetection": "OnPush",
+      "skipTests": true
+    }
+  },
   "defaultProject": "mynd-scully"
 }
