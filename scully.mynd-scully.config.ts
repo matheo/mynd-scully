@@ -4,7 +4,7 @@ import './scully/plugins/router.partners';
 export const config: ScullyConfig = {
   projectRoot: './src',
   projectName: 'mynd-scully',
-  outDir: './dist/static',
+  outDir: './docs',
   routes: {
     '/partners/:slug': {
       type: 'partnerSlugs'

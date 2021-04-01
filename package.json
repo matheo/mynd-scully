@@ -13,7 +13,7 @@
     "sanity:deploy": "sanity deploy",
     "schemas:deploy": "sanity graphql deploy",
     "scully": "scully --",
-    "scully:generate": "scully --scanRoutes",
+    "scully:scan": "scully --scanRoutes",
     "scully:serve": "scully serve --",
     "render": "ng build --prod && scully --scanRoutes"
   },
