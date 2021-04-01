@@ -36,8 +36,11 @@ speed-measure-plugin*.json
 /connect.lock
 /coverage
 /libpeerconnection.log
+/scully/**/*.js
+/scully/**/*.js.map
 npm-debug.log
 yarn-error.log
+scully.log
 testem.log
 /typings
 
