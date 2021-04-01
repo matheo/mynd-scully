@@ -26,5 +26,9 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "include": [
+    /* This config is only used to help editors like VS Code understand/resolve parts */
+    "./node_modules/@sanity/base/types/**/*.ts"
+  ]
 }
