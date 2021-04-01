@@ -6,11 +6,10 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./wrapper.component.styl'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class WrapperComponent implements OnInit {
+export class LayoutWrapperComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
