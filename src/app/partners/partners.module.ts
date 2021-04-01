@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { DisplayComponent } from './components/display/display.component';
-import { PartnerResolver } from './services/partner.resolver';
+import { PartnerService } from './services/partner.service';
 import { LayoutModule, LayoutWrapperComponent } from '../layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -13,10 +13,9 @@ const routes: Routes = [
     children: [
       {
         path: ':slug',
-        resolve: {
-          partner: PartnerResolver
-        },
-        component: DisplayComponent,
+        canActivate: [PartnerService],
+        resolve: { partner: PartnerService },
+        component: DisplayComponent
       },
     ],
   },
@@ -30,6 +29,6 @@ const routes: Routes = [
     LayoutModule,
   ],
   declarations: [DisplayComponent],
-  providers: [PartnerResolver],
+  providers: [PartnerService],
 })
 export class PartnersModule {}
