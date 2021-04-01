@@ -4,6 +4,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutModule, LayoutWrapperComponent } from '../layout';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
       {
         path: '',
         component: HomepageComponent,
+      },
+      {
+        path: 'not-found',
+        component: NotFoundComponent,
       },
     ],
   },
@@ -25,10 +30,11 @@ const routes: Routes = [
     LayoutModule,
   ],
   declarations: [
-    HomepageComponent
+    HomepageComponent,
+    NotFoundComponent
   ],
   exports: [
-    HomepageComponent
+    NotFoundComponent
   ],
 })
 export class PagesModule {}

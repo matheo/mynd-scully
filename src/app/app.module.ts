@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 
 import { AppComponent } from './app.component';
+import { LayoutModule, LayoutWrapperComponent } from './layout';
+import { NotFoundComponent } from './pages/components/not-found/not-found.component';
 import { PagesModule } from './pages/pages.module';
 
 const routes: Routes = [
@@ -12,6 +14,16 @@ const routes: Routes = [
     loadChildren: () =>
       import('./partners/partners.module').then((m) => m.PartnersModule),
   },
+  {
+    path: '',
+    component: LayoutWrapperComponent,
+    children: [
+      {
+        path: '**',
+        component: NotFoundComponent
+      },
+    ],
+  }
 ];
 
 @NgModule({
@@ -22,6 +34,7 @@ const routes: Routes = [
       initialNavigation: 'enabled',
     }),
     ScullyLibModule,
+    LayoutModule,
     PagesModule,
   ],
   providers: [],
