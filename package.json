@@ -15,7 +15,7 @@
     "scully": "scully --",
     "scully:scan": "scully --scanRoutes",
     "scully:serve": "scully serve --",
-    "gpages": "ng build --prod --base-href mynd-scully && scully --scanRoutes",
+    "gpages": "ng build --prod --base-href /mynd-scully/ && scully --scanRoutes",
     "render": "ng build --prod && scully --scanRoutes"
   },
   "private": true,
